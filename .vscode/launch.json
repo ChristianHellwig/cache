@@ -14,12 +14,14 @@
               "--colors",
               "--config",
               "${workspaceRoot}/jest.config.js",
-              "--runInBand"
+              "--runInBand",
+              "--verbose"
             ],
             "skipFiles": [
-              "${workspaceRoot}/../../node_modules/**/*",
-              "<node_internals>/**/*"
+              "${workspaceFolder}/<node_internals>/**",
+              "${workspaceFolder}/node_modules/**"
             ],
+            "console": "integratedTerminal",   
             "windows": {
               "skipFiles": ["C:\\**\\node_modules\\**\\*", "<node_internals>/**/*"]
             }
